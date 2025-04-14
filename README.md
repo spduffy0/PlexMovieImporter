@@ -1,5 +1,11 @@
 # PlexMovieImporter
-Copies and renames completed movies from source folders into plex
+Copies and renames completed movies from source folders into plex by running PlexMovieImporter.py
+
+PlexMovieImporter.py source destination -d --delete
+
+- source - folder location of the source folders to scan
+- destination - folder location of where to place copied movies (i.e. plex movie directory)
+- -d --delete - when set deletes source files
 
 
 Source files should be seperated by movie into folders with the name and year "<Movie_Name> (<Production_Year>)", which will produce outputs of "/<Movie_Name> (<Production_Year>)/<Movie_Name> (<Production_Year>).mp4" or "/<Movie_Name> (<Production_Year>)/<Movie_Name> (<Production_Year>) - Part<X>.mp4" (for folders with multiple files greater than 1GB in size), for any files greater than 1 GB in size in the source folders.
